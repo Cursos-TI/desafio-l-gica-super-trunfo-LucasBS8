@@ -17,6 +17,8 @@ int main()
     float population_density, population_density_2;
     float pib_per_capita, pib_per_capita_2;
     float total_power, total_power_2;
+    int option1, option2;
+    float value1_1, value1_2, value2_1, value2_2;
 
     // Primeira rodada de entrada de dados:
     // Área para entrada de dados
@@ -101,46 +103,17 @@ int main()
     printf("5. Comparar Densidade Populacional\n");
 
     printf("Escolha uma opção: ");
-    int option;
-    scanf("%d", &option);
+    scanf("%d", &option1);
 
-    switch (option)
+    switch (option1)
     {
     case 1:
         // População
         printf("População:\n");
         printf("Carta 1: %d\n", population);
         printf("Carta 2: %d\n", population_2);
-        printf("Resultado: ");
-        if (population > population_2)
-        {
-            printf("Carta 1 vencedora!\n\n");
-        }
-        else if (population < population_2)
-        {
-            printf("Carta 2 vencedora!\n\n");
-        }
-        else
-        {
-            // Poder total
-            printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
-            printf("\nPoder total:\n");
-            printf("Carta 1: %.2f\n", total_power);
-            printf("Carta 2: %.2f\n", total_power_2);
-            printf("Resultado: ");
-            if (total_power > total_power_2)
-            {
-                printf("Carta 1 vencedora!\n\n");
-            }
-            else if (total_power < total_power_2)
-            {
-                printf("Carta 2 vencedora!\n\n");
-            }
-            else
-            {
-                printf("Empate!\n\n");
-            }
-        }
+        value1_1 = population;
+        value1_2 = population_2;
         break;
 
     case 2:
@@ -148,36 +121,8 @@ int main()
         printf("Área:\n");
         printf("Carta 1: %.1f\n", area);
         printf("Carta 2: %.1f\n", area_2);
-        printf("Resultado: ");
-        if (area > area_2)
-        {
-            printf("Carta 1 vencedora!\n\n");
-        }
-        else if (area < area_2)
-        {
-            printf("Carta 2 vencedora!\n\n");
-        }
-        else
-        {
-            // Poder total
-            printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
-            printf("\nPoder total:\n");
-            printf("Carta 1: %.2f\n", total_power);
-            printf("Carta 2: %.2f\n", total_power_2);
-            printf("Resultado: ");
-            if (total_power > total_power_2)
-            {
-                printf("Carta 1 vencedora!\n\n");
-            }
-            else if (total_power < total_power_2)
-            {
-                printf("Carta 2 vencedora!\n\n");
-            }
-            else
-            {
-                printf("Empate!\n\n");
-            }
-        }
+        value1_1 = area;
+        value1_2 = area_2;
         break;
 
     case 3:
@@ -185,36 +130,8 @@ int main()
         printf("PIB:\n");
         printf("Carta 1: %.1f\n", pib);
         printf("Carta 2: %.1f\n", pib_2);
-        printf("Resultado: ");
-        if (pib > pib_2)
-        {
-            printf("Carta 1 vencedora!\n\n");
-        }
-        else if (pib < pib_2)
-        {
-            printf("Carta 2 vencedora!\n\n");
-        }
-        else
-        {
-            // Poder total
-            printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
-            printf("\nPoder total:\n");
-            printf("Carta 1: %.2f\n", total_power);
-            printf("Carta 2: %.2f\n", total_power_2);
-            printf("Resultado: ");
-            if (total_power > total_power_2)
-            {
-                printf("Carta 1 vencedora!\n\n");
-            }
-            else if (total_power < total_power_2)
-            {
-                printf("Carta 2 vencedora!\n\n");
-            }
-            else
-            {
-                printf("Empate!\n\n");
-            }
-        }
+        value1_1 = pib;
+        value1_2 = pib_2;
         break;
 
     case 4:
@@ -222,72 +139,17 @@ int main()
         printf("Pontos Turísticos:\n");
         printf("Carta 1: %d\n", turistic_points);
         printf("Carta 2: %d\n", turistic_points_2);
-        printf("Resultado: ");
-        if (turistic_points > turistic_points_2)
-        {
-            printf("Carta 1 vencedora!\n\n");
-        }
-        else if (turistic_points < turistic_points_2)
-        {
-            printf("Carta 2 vencedora!\n\n");
-        }
-        else
-        {
-            // Poder total
-            printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
-            printf("\nPoder total:\n");
-            printf("Carta 1: %.2f\n", total_power);
-            printf("Carta 2: %.2f\n", total_power_2);
-            printf("Resultado: ");
-            if (total_power > total_power_2)
-            {
-                printf("Carta 1 vencedora!\n\n");
-            }
-            else if (total_power < total_power_2)
-            {
-                printf("Carta 2 vencedora!\n\n");
-            }
-            else
-            {
-                printf("Empate!\n\n");
-            }
-        }
+        value1_1 = turistic_points;
+        value1_2 = turistic_points_2;
         break;
+
     case 5:
         // Densidade Populacional
         printf("Densidade Populacional:\n");
         printf("Carta 1: %.1f\n", population_density);
         printf("Carta 2: %.1f\n", population_density_2);
-        printf("Resultado: ");
-        if (population_density < population_density_2)
-        {
-            printf("Carta 1 vencedora!\n\n");
-        }
-        else if (population_density > population_density_2)
-        {
-            printf("Carta 2 vencedora!\n\n");
-        }
-        else
-        {
-            // Poder total
-            printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
-            printf("\nPoder total:\n");
-            printf("Carta 1: %.2f\n", total_power);
-            printf("Carta 2: %.2f\n", total_power_2);
-            printf("Resultado: ");
-            if (total_power > total_power_2)
-            {
-                printf("Carta 1 vencedora!\n\n");
-            }
-            else if (total_power < total_power_2)
-            {
-                printf("Carta 2 vencedora!\n\n");
-            }
-            else
-            {
-                printf("Empate!\n\n");
-            }
-        }
+        value1_1 = population_density;
+        value1_2 = population_density_2;
         break;
 
     default:
@@ -295,5 +157,212 @@ int main()
         break;
     }
 
+    // Comparação baseada na opção escolhida
+    if (option1 < 1 || option1 > 5)
+    {
+        printf("\n");
+    }
+    else
+    {
+
+        if (option1 > 0 && option1 < 6)
+        {
+            printf("Resultado: ");
+            if (option1 != 5)
+            {
+                if (value1_1 > value1_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (value1_1 < value1_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+            else
+            {
+                if (value1_1 < value1_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (value1_1 > value1_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+            if (value1_1 == value1_2)
+            {
+                // Poder total
+                printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
+                printf("\nPoder total:\n");
+                printf("Carta 1: %.2f\n", total_power);
+                printf("Carta 2: %.2f\n", total_power_2);
+                printf("Resultado: ");
+                if (total_power > total_power_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (total_power < total_power_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+        }
+    }
+    printf("\nEscolha uma segunda opção: ");
+    scanf("%d", &option2);
+    if (option2 == option1 || option2 < 1 || option2 > 5)
+    {
+        printf("Opção inválida ou repetida!\n");
+        return 0;
+    }
+
+    switch (option2)
+    {
+    case 1:
+        // População
+        printf("População:\n");
+        printf("Carta 1: %d\n", population);
+        printf("Carta 2: %d\n", population_2);
+        value2_1 = population;
+        value2_2 = population_2;
+        break;
+
+    case 2:
+        // Área
+        printf("Área:\n");
+        printf("Carta 1: %.1f\n", area);
+        printf("Carta 2: %.1f\n", area_2);
+        value2_1 = area;
+        value2_2 = area_2;
+        break;
+
+    case 3:
+        // PIB
+        printf("PIB:\n");
+        printf("Carta 1: %.1f\n", pib);
+        printf("Carta 2: %.1f\n", pib_2);
+        value2_1 = pib;
+        value2_2 = pib_2;
+        break;
+
+    case 4:
+        // Pontos Turísticos
+        printf("Pontos Turísticos:\n");
+        printf("Carta 1: %d\n", turistic_points);
+        printf("Carta 2: %d\n", turistic_points_2);
+        value2_1 = turistic_points;
+        value2_2 = turistic_points_2;
+        break;
+
+    case 5:
+        // Densidade Populacional
+        printf("Densidade Populacional:\n");
+        printf("Carta 1: %.1f\n", population_density);
+        printf("Carta 2: %.1f\n", population_density_2);
+        value2_1 = population_density;
+        value2_2 = population_density_2;
+        break;
+
+    default:
+        printf("Opção inválida!\n");
+        break;
+    }
+
+    // Comparação baseada na opção escolhida
+    if (option2 < 1 || option2 > 5)
+    {
+        printf("\n");
+    }
+    else
+    {
+
+        if (option2 > 0 && option2 < 6)
+        {
+            printf("Resultado: ");
+            if (option2 != 5)
+            {
+                if (value2_1 > value2_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (value2_1 < value2_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+            else
+            {
+                if (value2_1 < value2_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (value2_1 > value2_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+            if (value2_1 == value2_2)
+            {
+                // Poder total
+                printf("\nOcorreu empate, comparando as duas cartas com o poder total:\n");
+                printf("\nPoder total:\n");
+                printf("Carta 1: %.2f\n", total_power);
+                printf("Carta 2: %.2f\n", total_power_2);
+                printf("Resultado: ");
+                if (total_power > total_power_2)
+                {
+                    printf("Carta 1 vencedora!\n\n");
+                }
+                else if (total_power < total_power_2)
+                {
+                    printf("Carta 2 vencedora!\n\n");
+                }
+                else
+                {
+                    printf("Empate!\n\n");
+                }
+            }
+        }
+    }
+
+    // Soma dos dois atributos escolhidos
+    float sum1 = value1_1 + value2_1;
+    float sum2 = value1_2 + value2_2;
+    printf("Soma dos atributos escolhidos:\n");
+    printf("Carta 1: %.2f\n", sum1);
+    printf("Carta 2: %.2f\n", sum2);
+    if (sum1 > sum2)
+    {
+        printf("Carta 1 é a vencedora!\n");
+    }
+    else if (sum1 < sum2)
+    {
+        printf("Carta 2 é a vencedora!\n");
+    }
+    else
+    {
+        printf("Empate!\n");
+    }
     return 0;
 }
